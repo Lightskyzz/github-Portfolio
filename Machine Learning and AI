@@ -1,3 +1,72 @@
 Machine Learning and AI  -  Shaheer Hussain  -  Data analyst apprentice
 
-Sample
+Dogs or not dogs classification:
+Model - https://teachablemachine.withgoogle.com/models/sxCA-62hq/
+
+Cats or no cats classification:
+Model - https://teachablemachine.withgoogle.com/models/p1NR5Kpxv/
+
+Human or no Human classification:
+Model - https://teachablemachine.withgoogle.com/models/Gq5OvKizL/
+
+
+Planning for an AI agent and machine learning model
+
+In today's age of artificial intelligence (AI), the demand for image recognition models has become
+essential across industries from healthcare to retail. My document will outline the steps involved in
+creating an AI model for image recognition. It encompasses activities such as data preparation,
+categorization, training, validation, model testing, AI agent design, development and assessment.
+Each step contributes to ensuring the effectiveness and precision of the AI model in achieving
+classification results.
+Data Preparation :
+The initial stage of setting up an AI model for image recognition focuses on data preparation. This
+includes organising the dataset by standardising images and normalising data to ensure consistency
+and accuracy during training. The dataset may consist of images categorised into groups like cats,
+dogs or other objects. Proper organisation of the dataset is crucial for training and validation
+processes. For my AI agent, I collected data from already made datasets from a reputable website
+called Kaggle (https://www.kaggle.com/), In particular, I made use of an extremely detailed cat image
+dataset uploaded by Chris Crawford (https://www.kaggle.com/datasets/crawford/cat-dataset ) which
+has over 8000 images and the similarly detailed stanford dogs dataset
+(https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset?resource=download) which
+has 20,580 images. Finally, I also chose to make use of a human faces dataset
+(https://www.kaggle.com/datasets/ashwingupta3012/human-faces ) which has over 7200 images. I
+chose to use these datasets as they are quite simple to evaluate in terms of their data quality and
+integrity but also it would make the process of data preparation much easier as these datasets are
+commonly used for projects like image classification.
+
+1
+
+Categorization :
+Following organisation is the categorization phase, This involves assigning labels to each image based
+on its category. Creating subsets within the dataset for training, validation and testing purposes is
+essential. Accurate labelling is vital for teaching the AI model to recognize categories dividing subsets
+and aids in evaluating the model's performance at various development stages. For my AI models
+which I trained, I chose to use very simple labels that generally indicated whether a subject was in or
+not in the image, for example, two labels could be “Dogs” to indicate there are dogs in the image or
+“Not dogs” to indicate that there are no dogs in the image, of course with the cats and humans
+models they would follow the same structure.
+
+Training :
+Training an AI model entails considering parameters and hyperparameters.
+Factors such, as batch size, learning rate, number of epochs and techniques to prevent overfitting
+and underfitting are considerations. The batch size determines how many samples are processed
+before updating the model parameters while the learning rate controls the size of steps taken during
+parameter updates. It is important to choose values for these hyperparameters to improve the
+model's performance and shorten the training time. I am using “Google’s Teachable Machine” to
+train AI models which my code will then access, I have chosen to keep the batch size as “16” as the
+tool mentions that this option does not need to be tweaked in order to affect the performance of the
+model, However, I have increased the Epochs to “100”, this is because the AI model will be more
+trained on the sample images given which can result in the model being more accurate, I also have
+kept the learning rate as “0.001” which is the default, I did not feel confident about increasing the
+number as this may affect the quality of the AI models results when trying to predict or classify
+images.
+
+Validation :
+Validation is a part of the training process as it evaluates how well the model performs on a subset of
+data that was not used in training. This evaluation helps gauge how effectively the model generalises
+and identifies any issues related to overfitting or underfitting. Various validation methods like
+cross-validation can be employed to ensure the model's reliability.
+For validation I will be taking images from google images as they will be images not included in the
+data set, I will also test against images of my own however I will not include this in my Figures for
+privacy reasons.
+
